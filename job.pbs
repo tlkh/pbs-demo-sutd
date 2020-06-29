@@ -12,6 +12,8 @@ nvidia-smi
 
 cd /home/users/uat/scratch/demo/pbs-demo-sutd/
 
+python -m pip install -r requirements.txt
+
 python train.py
 
 echo 'Done!'
