@@ -10,7 +10,7 @@ cd "$PBS_O_WORKDIR" || exit $?
 
 nvidia-smi
 
-cd /home/users/uat/scratch/demo
+cd /home/users/uat/scratch/demo/pbs-demo-sutd/
 
 python3 train.py
 
