@@ -12,6 +12,6 @@ nvidia-smi
 
 cd /home/users/uat/scratch/demo/pbs-demo-sutd/
 
-python3 train.py
+python train.py
 
 echo 'Done!'
