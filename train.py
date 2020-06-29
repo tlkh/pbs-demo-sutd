@@ -12,7 +12,7 @@ from tqdm import tqdm
 import multiprocessing
 num_threads = 2
 BATCH_SIZE = 512
-EPOCHS = 200
+EPOCHS = 10
 LEARNING_RATE = 0.001
 AMP_LEVEL = "O1"
 PATH = "~/scratch/demo/cifar_net.pth"
