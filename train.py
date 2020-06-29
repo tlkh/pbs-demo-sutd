@@ -18,7 +18,6 @@ AMP_LEVEL = "O1"
 PATH = "~/scratch/demo/cifar_net.pth"
 
 import os
-import paramiko
 
 print(" Configuration ")
 print("===============")
