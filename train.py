@@ -15,7 +15,7 @@ BATCH_SIZE = 512
 EPOCHS = 200
 LEARNING_RATE = 0.001
 AMP_LEVEL = "O1"
-PATH = "~/scratch/experiment/cifar_net.pth"
+PATH = "~/scratch/demo/cifar_net.pth"
 
 import os
 import paramiko
@@ -122,7 +122,7 @@ def main():
     print("End-to-end time:", int(et-st))
     
     uid = str(int(time.time()))
-    result_path = "~/scratch/experiment/"+uid+"_result.txt"
+    result_path = "~/scratch/demo/"+uid+"_result.txt"
     f = open(result_path,"w+")
     f.write("Avg images/sec:"+str(avg_fps))
     f.write("\nMin images/sec:"+str(min_fps))
