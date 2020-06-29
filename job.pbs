@@ -4,16 +4,15 @@
 #PBS -N demo_pytorch_1_gpu
 #PBS -j oe
 #PBS -o demo_pytorch_1_gpu.log
+#PBS -q research
 #PBS -v CONTAINER_IMAGE=nvcr.io/nvidia/pytorch:20.02-py3
 
 cd "$PBS_O_WORKDIR" || exit $?
+
+export PATH="/opt/conda/bin/:$PATH"
 
 nvidia-smi
 
 cd /home/users/uat/scratch/demo/pbs-demo-sutd/
 
-conda install pillow
-
 python train.py
-
-echo 'Done!'
